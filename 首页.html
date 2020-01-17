@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <style>
+        *{padding: 0;margin:0;}
+        html{font-size: 26.67vw;}
+        #personal{height: 100vh;background: #fff;display: flex;flex-direction: column;}
+        header{width: 3.75rem;height: 3.26rem;background: url(个人中心/image/head_bg.jpg) no-repeat;background-size: 3.75rem;display: flex;flex-direction: column;}
+
+        header .portrait{width: 1.05rem;height: 1.05rem;border-radius: 50%;border: 4px solid #fff;background: url(个人中心/image/tx.jpg) no-repeat;background-size: 1.05rem; align-self: center;position: absolute;top: 0.61rem;}
+        header h2{font-size: 0.16rem;color: #fff;text-align: center;margin-top: 1.87rem;}
+        header span{font-size: 0.14rem;color: #fff;text-align: center;margin-top: 0.07rem;}
+
+        main{flex: 1; overflow: hidden;}
+        main .content{height: 100%;display: flex;flex-wrap: wrap;overflow: auto;}
+        main .content .jiaxiang,
+        main .content .dixiong,
+        main .content .bzzx{border-right: 1px solid #a6a8b7;}
+        main .content div:hover{background: #ffd796;}
+
+        main .content .jiaxiang,
+        main .content .dixiong,
+        main .content .brzp,
+        main .content .bzzx,
+        main .content .tcdl,
+        main .content .banji{width: 1.86rem;height: 1.15rem;border-top: 1px solid #a6a8b7;display: flex;flex-direction: column;position: relative;}
+        main .jiaxiang i,
+        main .banji i,
+        main .brzp i,
+        main .bzzx i,
+        main .tcdl i,
+        main .dixiong i{align-self: center;}
+        main .jiaxiang span,
+        main .dixiong span,
+        main .brzp span,
+        main .bzzx span,
+        main .tcdl span,
+        main .banji span{font-size: 0.14rem;align-self: center;color: #212c67;font-weight: bold;position: absolute;top: 0.69rem;}
+
+        main .jiaxiang i{width: 0.24rem;height: 0.25rem;background: url(个人中心/image/ico.png) no-repeat;background-size: auto 0.28rem;position: absolute;top: 0.21rem;}
+        main .banji i{width: 0.31rem;height: 0.20rem;background: url(个人中心/image/ico.png) -24px 0 no-repeat;background-size: auto 0.28rem;position: absolute;top: 0.24rem;}
+        main .dixiong i{width: 0.3rem;height: 0.20rem;background: url(个人中心/image/ico.png) -55.5px 0 no-repeat;background-size: auto 0.28rem;position: absolute;top: 0.24rem;}
+        main .brzp i{width: 0.26rem;height: 0.26rem;background: url(个人中心/image/ico.png) -85px 0 no-repeat;background-size: auto 0.28rem;position: absolute;top: 0.24rem;}
+        main .bzzx i{width: 0.29rem;height: 0.28rem;background: url(个人中心/image/ico.png) -111px 0 no-repeat;background-size: auto 0.28rem;position: absolute;top: 0.24rem;}
+        main .tcdl i{width: 0.20rem;height: 0.21rem;background: url(个人中心/image/ico.png) -140px 0 no-repeat;background-size: auto 0.28rem;position: absolute;top: 0.24rem;}
+
+        footer{width: 100vw;height: 0.7rem;background: #fff;border-top: 1px solid #a6a8b7; display: flex;flex-direction: row;}
+        footer a{flex: 1;display: flex;flex-direction: column;align-items: center;justify-items: center;}
+
+        footer a span{font-size: 0.1rem;color: #2d2d2d;}
+        footer .jiaxiang{position: relative;}
+        footer .jiaxiang i{width: 0.24rem;height: 0.25rem;background: url(个人中心/image/ico_tow.png) 0 0 no-repeat;background-size: auto 0.25rem;position: absolute;top: 0.14rem;}
+        footer .jiaxiang span{position: absolute;top: 0.43rem;}
+
+        footer .banji{position: relative;}
+        footer .banji i{width: 0.28rem;height: 0.18rem;background: url(个人中心/image/ico_tow.png) -24px 0 no-repeat;background-size: auto 0.25rem;position: absolute;top: 0.18rem;}
+        footer .banji span{position: absolute;top: 0.43rem;}
+
+        footer .dixiong{position: relative;}
+        footer .dixiong i{width: 0.25rem;height: 0.19em;background: url(个人中心/image/ico_tow.png) -52px 0 no-repeat;background-size: auto 0.25rem;position: absolute;top: 0.18rem;}
+        footer .dixiong span{position: absolute;top: 0.43rem;}
+        footer .brzp{position: relative;}
+        footer .brzp i{width: 0.24rem;height: 0.25rem;background: url(个人中心/image/ico_tow.png) -77px 0 no-repeat;background-size: auto 0.25rem;position: absolute;top: 0.14rem;}
+        footer .brzp span{position: absolute;top: 0.43rem;}
+        footer .grzx{position: relative;}
+        footer .grzx i{width: 0.25rem;height: 0.25rem;background: url(个人中心/image/ico_tow.png) -102px 0 no-repeat;background-size: auto 0.25rem;position: absolute;top: 0.14rem;}
+        footer .grzx span{position: absolute;top: 0.43rem;}
+    </style>
+</head>
+<body>
+    <div id="personal">
+        <header>
+            <div class="portrait"></div>
+            <h2>光 之 军</h2>
+            <span>2221289663@qq.com</span>
+        </header>
+        <main>
+            <div class="content">
+                <a href="家乡.html">
+                    <div class="jiaxiang">
+                        <i></i>
+                        <span>家乡</span>
+                    </div>
+                </a>
+                <a href="班级.html">
+                    <div class="banji">
+                        <i></i>
+                        <span>班级</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="dixiong">
+                        <i></i>
+                        <span>弟兄</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="brzp">
+                        <i></i>
+                        <span>本人照片</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="bzzx">
+                        <i></i>
+                        <span>帮助中心</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="tcdl">
+                        <i></i>
+                        <span>退出登录</span>
+                    </div>
+                </a>   
+            </div> 
+        </main>
+        <footer>
+            <a href="家乡.html" class="jiaxiang">
+                <i></i>
+                <span>家乡</span>
+            </a> 
+            <a href="班级.html" class="banji">
+                <i></i>
+                <span>班级</span>
+            </a>
+            <a href="#" class="dixiong">
+                <i></i>
+                <span>弟兄</span>
+            </a>
+            <a href="#" class="brzp">
+                <i></i>
+                <span>本人照片</span> 
+            </a>
+            <a href="#" class="grzx">
+                <i></i>
+                <span>个人中心</span> 
+            </a>   
+        </footer>
+    </div>
+</body>
+</html>
